@@ -1,2 +1,15 @@
-2
-2
+Le modèle OSI (Open Systems Interconnection) est un modèle conceptuel qui décrit le fonctionnement des réseaux en 7 couches :
+
+1. **Physique** – Transmission des données sous forme de signal (électrique, radio, lumière).
+2. **Liaison de données** – Gestion des connexions entre deux appareils et détection des erreurs.
+3. **Réseau** – Routage des données entre réseaux (ex: IP, ICMP).
+4. **Transport** – Communication de bout en bout et gestion des connexions (ex: TCP, UDP).
+5. **Session** – Gestion des sessions de communication.
+6. **Présentation** – Traduction des données (ex: chiffrement, encodage).
+7. **Application** – Interface avec les applications utilisateur (ex: HTTP, SMTP).
+
+Dans ce projet, nous nous concentrons principalement sur :
+- **La couche Transport**, qui gère la transmission de données entre appareils via **TCP** (connexion fiable) ou **UDP** (connexion rapide et non fiable).
+- **La couche Réseau**, qui gère l'adressage et le routage des données via **IP** et **ICMP**.
+
+Ce fichier sert à comprendre l'organisation et le rôle des couches du modèle OSI.
