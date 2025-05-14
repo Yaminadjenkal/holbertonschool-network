@@ -1,0 +1,73 @@
+1️⃣ Figuring Out Where Google Lives (DNS Lookup)
+Your browser doesn’t magically know where Google is. It has to ask the Domain Name System (DNS) to translate www.google.com into an IP address, like 142.250.190.78.
+
+If your computer has seen this site recently, it already remembers the address.
+
+Otherwise, the request gets sent to a series of DNS servers that work together to find Google’s IP.
+
+2️⃣ Setting Up a Connection (TCP/IP Handshake)
+Now that your browser knows where Google is, it needs to say hello and establish a connection.
+
+This happens with a three-step handshake:
+
+Your computer sends a SYN (Hey, can we talk?).
+
+Google replies with SYN-ACK (Sure, let’s do it!).
+
+Your computer responds with ACK (Great, let’s go!).
+
+This ensures the connection is reliable, so no data gets lost.
+
+3️⃣ Passing Through Security Checks (Firewalls)
+Before reaching Google, your request may go through firewalls designed to protect against hackers, malware, and suspicious activity.
+
+Your own computer’s firewall makes sure nothing harmful comes in.
+
+Google’s firewalls filter bad traffic, stopping attacks before they reach their servers.
+
+4️⃣ Making Sure It’s Secure (HTTPS & SSL/TLS)
+Since you typed https://, your browser starts a secure handshake with Google using SSL/TLS encryption.
+
+This ensures that your data remains private, and no one (like a hacker on public Wi-Fi) can steal it.
+
+The browser checks Google’s SSL certificate to confirm you’re not talking to a fake version of Google.
+
+5️⃣ Handling Millions of Users at Once (Load Balancer)
+Google serves billions of requests every day, so it doesn’t rely on just one server.
+
+Instead, your request goes through a load balancer, which decides which of Google’s many servers will handle it.
+
+This prevents slowdowns and makes sure Google doesn’t crash from too much traffic.
+
+6️⃣ Web Server Handles Your Request (Nginx or Apache)
+Once Google’s load balancer picks a server:
+
+The web server (Nginx or Apache) looks at your request.
+
+If you’re asking for something simple (like an image or homepage), it sends it directly.
+
+If you’re searching for something, it forwards the request to the application server.
+
+7️⃣ Application Server Does the Heavy Lifting
+Now, the application server gets to work.
+
+It processes what you’re asking for (e.g., a Google search).
+
+It interacts with databases, retrieves results, and figures out what to send back to you.
+
+8️⃣ Database Finds the Information You Need
+Google’s database stores everything—from search indexes to your saved preferences.
+
+The application server asks the database to retrieve relevant information.
+
+The database sends back search results, user history, or whatever you need.
+
+9️⃣ Sending the Response Back to You
+Google’s web server takes the database response and packages it into an HTML page.
+
+Your browser processes the page, loads images, styles it with CSS, and runs JavaScript.
+
+Finally, the Google homepage appears, or you see your search results!
+
+The Crazy Part?
+This entire process takes place in fractions of a second! Your request has traveled across the world, been processed by multiple servers, and returned to you almost instantly.
