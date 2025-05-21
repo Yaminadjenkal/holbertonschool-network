@@ -1,5 +1,5 @@
 1️⃣ Figuring Out Where Google Lives (DNS Lookup)
-Your browser doesn’t magically know where Google is. It has to ask the Domain Name System (DNS) to translate www.google.com into an IP address, like 142.250.190.78.
+Your browser doesn’t magically know where Google is. It has to ask the Domain Name System (DNS) to translate <www.google.com> into an IP address, like 142.250.190.78.
 
 If your computer has seen this site recently, it already remembers the address.
 
